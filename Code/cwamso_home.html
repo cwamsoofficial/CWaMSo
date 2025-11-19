@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWaMSo - Community Waste Management Software</title>
+    <link rel="stylesheet" href="cwamso.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/cwamso_logo.png" class="logo-image">
+                    <span class="logo-text">CWaMSo</span>
+                </div>
+
+                <div class="nav-links desktop-nav">
+                    <a href="cwamso_home.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="desktop-nav">
+                    <a href="login.html"><button class="btn-primary">Login</button></a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a href="cwamso_home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html"><button class="btn-primary mobile-btn">Login</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">A Smart Digital Solution for Cleaner Communities in Nigeria</h1>
+                    <p class="hero-description">
+                        CWaMSo connects citizens, collectors, and authorities through a digital platform that ensures
+                        smarter, cleaner communities.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="signup.html">
+                            <button class="btn-primary btn-large">
+                                Get Started
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="about.html">
+                            <button class="btn-secondary btn-large">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop"
+                        alt="Waste Management" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Challenge We're Solving</h2>
+                <p class="section-subtitle">Poor waste management practices in Nigeria lead to pollution and
+                    inefficiency</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3 class="problem-title">Irregular Collection</h3>
+                    <p class="problem-desc">Delayed waste collection leading to overflowing bins</p>
+                </div>
+                <div class="problem-card">
+                    <h3 class="problem-title">Poor Communication</h3>
+                    <p class="problem-desc">Lack of connection between residents and waste collectors</p>
+                </div>
+                <div class="problem-card">
+                    <h3 class="problem-title">No Data Tracking</h3>
+                    <p class="problem-desc">Absence of reliable data for effective planning</p>
+                </div>
+                <div class="problem-card">
+                    <h3 class="problem-title">Low Participation</h3>
+                    <p class="problem-desc">Weak recycling culture and public engagement</p>
+                </div>
+                <div class="problem-card">
+                    <h3 class="problem-title">Health Risks</h3>
+                    <p class="problem-desc">Environmental pollution and associated health hazards</p>
+                </div>
+                <div class="problem-card">
+                    <h3 class="problem-title">No Accountability</h3>
+                    <p class="problem-desc">Lack of transparency in waste management operations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Solution</h2>
+                <p class="section-subtitle">A comprehensive digital platform for modern waste management</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">Real-time Tracking</h3>
+                    <p class="feature-desc">Schedule pickups and track waste collection in real-time</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Online Billing</h3>
+                    <p class="feature-desc">Secure payment options and digital billing system</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Recycling Rewards</h3>
+                    <p class="feature-desc">Earn rewards for active participation in recycling</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Data Dashboard</h3>
+                    <p class="feature-desc">Monitor and analyze waste management performance</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Smart Alerts</h3>
+                    <p class="feature-desc">Environmental health alerts and compliance tracking</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Community Hub</h3>
+                    <p class="feature-desc">Connect residents, collectors, and authorities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Join Us in Building Cleaner Communities</h2>
+                <p class="cta-subtitle">CWaMSo: Building technology for a cleaner tomorrow</p>
+                <a href="contact.html"><button class="btn-cta">Contact Us Today</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 CWaMSo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cwamso.js"></script>
+</body>
+
+</html>

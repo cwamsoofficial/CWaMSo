@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard – CWaMSo</title>
+    <link rel="stylesheet" href="cwamso.css" />
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background: #111827;
+            color: white;
+            padding: 2rem 1rem;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 0.75rem 0;
+        }
+
+        .sidebar a:hover {
+            color: white;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .dash-cards {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .dash-card {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 style="margin-bottom:1rem;">CWaMSo</h2>
+            <a href="#">Dashboard</a>
+            <a href="#">Report Waste</a>
+            <a href="#">Pickup Tracking</a>
+            <a href="#">Billing</a>
+            <a href="#">Recycling Points</a>
+            <a href="login.html">Logout</a>
+        </aside>
+
+        <!-- Main content -->
+        <main class="content">
+            <h1 class="hero-title">Dashboard</h1>
+            <p class="hero-description">Welcome! Here's your waste management activity summary.</p>
+
+            <div class="dash-cards" style="margin-top:2rem;">
+                <div class="dash-card">
+                    <h3>Total Reports</h3>
+                    <p style="font-size:2rem; font-weight:bold;">12</p>
+                </div>
+
+                <div class="dash-card">
+                    <h3>Pickups Completed</h3>
+                    <p style="font-size:2rem; font-weight:bold;">8</p>
+                </div>
+
+                <div class="dash-card">
+                    <h3>Recycling Points</h3>
+                    <p style="font-size:2rem; font-weight:bold;">120</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top:3rem;">Recent Activities</h3>
+            <div class="dash-card" style="margin-top:1rem;">
+                <p>• Pickup completed for your waste report – 2 hours ago</p>
+                <p>• Recycling reward added – 1 day ago</p>
+                <p>• New pickup scheduled – 3 days ago</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="cwamso.js"></script>
+</body>
+
+</html>
